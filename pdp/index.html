@@ -24,7 +24,7 @@
   <body>
     <div class="container mt-5">
       <div class="row">
-        <div class="col-6 d-flex">
+        <div class="col-6 d-flex image-section">
           <div class="col-2 sideBarSlider">
             <button id="scrollUp" class="mb-2 thumbnailUpSlider">
               <span class="material-icons">keyboard_arrow_up</span>
@@ -180,31 +180,117 @@
             </div>
           </div>
         </div>
-        <div class="col-6 content-section">
-          <div class="row">
+        <div class="col-6 order-2 md-order-2 content-section">
+          <div class="row top-content">
             <div class="col-6 approved-vendor">Approved Vendor</div>
-            <div class="col-6 email-logo">
-              <span class="material-icons icon-transparent">email</span>
-              <span>Email</span>
+            <div class="col-6">
+              <a class="email-logo" href=""
+                ><i class="material-icons icon-transparent">email</i>
+                <span>Email</span></a
+              >
             </div>
           </div>
           <div class="mt-2"><h6>MILWAUKEE</h6></div>
-          <div class="product-heading">
+          <div class="product-heading mt-2">
             <h3>M 18 FUEL Wet/Dry Vacuum Kit 9 Gallon Dual-Battery</h3>
           </div>
-          <div>
+          <div class="mt-4">
             <span class="item-number"
               ><h6>Item <b># 1234567890987654321</b></h6></span
             ><span class="unpsc-number"
               ><h6>UN5PSC <b># 20111603</b></h6></span
             >
           </div>
-          <div>
+          <div class="mt-2">
             <span class="item-number"
               ><h6>MFR <b># 1234567890987654321</b></h6></span
             ><span class="unpsc-number"
               ><h6>Shipping Weight <b>2.89 lbs</b></h6></span
             >
+          </div>
+          <div class="row d-flex picto-images mt-4">
+            <img
+              class="picto-image"
+              src="/images/content-picto-image-1.png"
+              alt="picto-1"
+            />
+            <img
+              class="picto-image"
+              src="/images/content-picto-image-2.png"
+              alt="picto-2"
+            />
+            <img
+              class="picto-image"
+              src="/images/content-picto-image-3.png"
+              alt="picto-3"
+            />
+          </div>
+          <div class="row mt-4">
+            <div class="col-6 availability-section border-right">
+              <h6>Check Availability</h6>
+              <div class="row mt-2">
+                <div class="col-4">
+                  <button type="button" class="btn btn-primary pickup-button">
+                    Pick up
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button type="button" class="btn btn-light shipping-button">
+                    Shipping
+                  </button>
+                </div>
+                <div class="col-4"></div>
+              </div>
+              <div class="dropdown mt-2 w-100 branch-dropdown">
+                <button
+                  class="btn btn-light dropdown-toggle w-100"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Select Branch
+                </button>
+                <ul class="dropdown-menu w-100">
+                  <li><a class="dropdown-item" href="#">Pune</a></li>
+                  <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Delhi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 add-to-cart-button-section">
+              <div></div>
+              <div class="product-price">CA <b>$946.14</b> / each</div>
+              <div class="row mt-2">
+                <div class="col-4">
+                  <div class="d-flex input-section">
+                    <button
+                      class="btn btn-light quantity-button"
+                      onclick="decreaseQuantity(this)"
+                    >
+                      -
+                    </button>
+                    <input
+                      type="number"
+                      class="form-control quantity-input"
+                      value="1"
+                    />
+                    <button
+                      class="btn btn-light quantity-button"
+                      onclick="increaseQuantity(this)"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <button class="btn btn-primary add-to-cart-button w-100">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
