@@ -1,0 +1,95 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 20px;
+}
+
+.slider__content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  max-width: 100%;
+  width: 92%;
+  object-fit: cover;
+  height: 100%;
+}
+.nav-button {
+  border: none;
+}
+.thumbnail.hidden {
+  display: none;
+}
+.thumbnailUpSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.scrollDown {
+  align-items: center;
+}
+
+.sideBarSlider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: -25px;
+}
+
+.thumbnailUpSlider,
+#scrollDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+/* .top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.approved-vendor {
+  background-color: rgb(20 79 135);
+  color: white;
+  padding: 10px 25px 10px 20px;
+  display: inline-block;
+  width: auto;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+}
+.email-logo {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 150px;
+}
+.icon-transparent {
+  background: transparent;
+  color: inherit;
+}
+.product-heading {
+  color: rgb(20 79 135);
+}
+.item-number,
+.unpsc-number {
+  display: inline-block;
+  margin-right: 25px;
+}
+.picto-image {
+  width: 8%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
