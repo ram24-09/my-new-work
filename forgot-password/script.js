@@ -63,3 +63,17 @@ function validatePasswords() {
     passwordMatchStatus.style.display = "none";
   }
 }
+
+function togglePasswordVisibility(inputId, eyeIconId) {
+  const input = document.getElementById(inputId);
+  const eyeIcon = document.getElementById(eyeIconId);
+  if (input.type === "password") {
+    input.type = "text";
+    eyeIcon.classList.remove("fa-eye");
+    eyeIcon.classList.add("fa-eye-slash");
+  } else {
+    input.type = "password";
+    eyeIcon.classList.remove("fa-eye-slash");
+    eyeIcon.classList.add("fa-eye");
+  }
+}

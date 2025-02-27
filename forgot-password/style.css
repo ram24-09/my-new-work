@@ -36,15 +36,6 @@
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 576px) {
-  .form-inputs {
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 .password-validations-heading {
   font-size: 20px;
 }
@@ -53,7 +44,7 @@
   color: rgb(14, 84, 170);
 }
 
-.strengthStatus {
+#strengthStatus {
   position: absolute;
   top: -20px;
   right: 10px;
@@ -66,4 +57,24 @@
 
 #progressContainer {
   height: 8px;
+}
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+}
+.eye-icon {
+  position: absolute;
+  top: 75%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.fa-eye {
+  font-weight: 100;
+}
+@media (max-width: 768px) {
+  .reset-button {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
