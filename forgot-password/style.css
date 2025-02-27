@@ -45,11 +45,25 @@
   }
 }
 
-.password-validations {
-  margin-top: 60px;
+.password-validations-heading {
+  font-size: 20px;
 }
+
+.form-heading {
+  color: rgb(14, 84, 170);
+}
+
+.strengthStatus {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  display: none;
+}
+
 .reset-button {
-  margin-right: 0;
-  display: flex;
-  justify-content: flex-end;
+  background-color: rgb(14, 84, 170);
+}
+
+#progressContainer {
+  height: 8px;
 }
