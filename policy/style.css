@@ -1,0 +1,12 @@
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: rgb(6, 38, 92);
+  border-radius: 0px;
+}
+.sidebar-heading {
+  background-color: rgb(6, 38, 92);
+  color: #ffffff;
+  padding-left: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
