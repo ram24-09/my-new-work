@@ -54,11 +54,6 @@
   border: none;
   background: none;
 }
-/* .top-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .approved-vendor {
   background-color: rgb(20 79 135);
   color: white;
@@ -187,4 +182,10 @@
 .accordion-button.collapsed {
   background-color: rgb(20 79 135);
   color: white;
+}
+
+/* side image scroll */
+.active-thumbnail img {
+  border: 2px solid #007bff; /* Blue border for active thumbnail */
+  box-sizing: border-box; /* Ensure the border is included in the element's total width and height */
 }
