@@ -33,12 +33,23 @@ function scrollDown() {
   }
 }
 
-// Initialize visibility for the first 6 images
+// Initialize visibility for the first 6 images and arrow icons
 window.onload = () => {
   const smallImages = document.querySelectorAll(".small-images img");
-  for (let i = 0; i < 6; i++) {
-    if (smallImages[i]) {
+  const scrollUpBtn = document.getElementById("scrollUpBtn");
+  const scrollDownBtn = document.getElementById("scrollDownBtn");
+
+  if (smallImages.length <= 6) {
+    scrollUpBtn.style.display = "none";
+    scrollDownBtn.style.display = "none";
+    for (let i = 0; i < smallImages.length; i++) {
       smallImages[i].style.display = "block";
+    }
+  } else {
+    for (let i = 0; i < 6; i++) {
+      if (smallImages[i]) {
+        smallImages[i].style.display = "block";
+      }
     }
   }
 };

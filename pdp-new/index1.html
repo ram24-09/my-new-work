@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,7 +23,13 @@
         <div class="product-box">
           <div class="all-images">
             <div class="small-images">
-              <button onclick="scrollUp()" class="btn btn-light">▲</button>
+              <button
+                id="scrollUpBtn"
+                onclick="scrollUp()"
+                class="btn btn-light"
+              >
+                ▲
+              </button>
               <img src="/images/img1.jpg" onclick="clickImg(this)" alt="img" />
               <img src="/images/img2.jpg" onclick="clickImg(this)" alt="img" />
               <img src="/images/img3.jpg" onclick="clickImg(this)" alt="img" />
@@ -33,7 +39,13 @@
               <img src="/images/img7.jpg" onclick="clickImg(this)" alt="img" />
               <img src="/images/img8.jpg" onclick="clickImg(this)" alt="img" />
               <img src="/images/img9.jpg" onclick="clickImg(this)" alt="img" />
-              <button onclick="scrollDown()" class="btn btn-light">▼</button>
+              <button
+                id="scrollDownBtn"
+                onclick="scrollDown()"
+                class="btn btn-light"
+              >
+                ▼
+              </button>
             </div>
             <div class="main-images">
               <img src="/images/img1.jpg" id="mainImg" alt="main-image" />
@@ -114,15 +126,26 @@
         }
       }
 
-      // Initialize visibility for the first 6 images
+      // Initialize visibility for the first 6 images and arrow icons
       window.onload = () => {
         const smallImages = document.querySelectorAll(".small-images img");
-        for (let i = 0; i < 6; i++) {
-          if (smallImages[i]) {
+        const scrollUpBtn = document.getElementById("scrollUpBtn");
+        const scrollDownBtn = document.getElementById("scrollDownBtn");
+
+        if (smallImages.length <= 6) {
+          scrollUpBtn.style.display = "none";
+          scrollDownBtn.style.display = "none";
+          for (let i = 0; i < smallImages.length; i++) {
             smallImages[i].style.display = "block";
+          }
+        } else {
+          for (let i = 0; i < 6; i++) {
+            if (smallImages[i]) {
+              smallImages[i].style.display = "block";
+            }
           }
         }
       };
     </script>
   </body>
-</html> -->
+</html>
