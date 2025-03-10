@@ -91,7 +91,17 @@
   }
 }
 
-/* For small images carousel */
 .small-images img {
   display: none;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 30px;
+  height: 30px;
+}
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
 }
